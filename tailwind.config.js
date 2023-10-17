@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'train1': "url('app/img/training1.png')",
+        'train2': "url('app/img/training2.png')",
+      },
       colors: {
         'gold': '#fca311',
         'drkblue': '#14213d',

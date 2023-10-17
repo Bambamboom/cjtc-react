@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import NavBar from '@/components/ui/NavBar'
+import HeroGrid from '@/components/ui/HeroGrid'
+import ListHandouts from '@/components/ui/HandoutList'
 
 export default function Home() {
   return (
-    <body>
-      <header>
+    <body className='mt-4'>
+      <header className='mb-16'>
         <NavBar />
       </header>
-      <main className="p-8 md:p-16 lg:p-24 rounded-md">
-        <h1 className='text-4xl md:text-5xl text-gold text-center'>Patrol Procedures Basic</h1>
-        <h2 className='mt-3 text-2xl md:text-3xl text-drkblue text-center'>Student Material</h2>
+      <main className="w-2/3 mt-24 mx-auto rounded-md">
+        <HeroGrid />
+        <div className='mt-12 mb-8 w-1/2'>
+          <h1 className='text-4xl text-gold'>Student Handouts</h1>
+          <ListHandouts />
+        </div>
       </main>
     </body>
   )
