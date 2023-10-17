@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: hsl(0, 0%, 100%); /* Pure White */
+    --foreground: hsl(220, 44%, 13%); /* Dark Navy Blue */
+  
+    --card: hsl(0, 0%, 90%); /* Light Gray */
+    --card-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --popover: hsl(0, 0%, 90%); /* Light Gray */
+    --popover-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --primary: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --primary-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --secondary: hsl(220, 44%, 13%); /* Dark Navy Blue */
+    --secondary-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --muted: hsl(0, 0%, 90%); /* Light Gray */
+    --muted-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --accent: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --accent-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --destructive: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --destructive-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --border: hsl(0, 0%, 90%); /* Light Gray */
+    --input: hsl(0, 0%, 100%); /* Pure White */
+    --ring: hsl(220, 44%, 13%); /* Dark Navy Blue */
+  
+    --radius: 0.5rem;
+  }
+  
+ 
+  .dark {
+    --background: hsl(220, 44%, 13%); /* Dark Navy Blue */
+    --foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --card: hsl(0, 0%, 0%); /* Pure Black */
+    --card-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --popover: hsl(0, 0%, 0%); /* Pure Black */
+    --popover-foreground: hsl(0, 0%, 100%); /* Pure White */
+  
+    --primary: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --primary-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --secondary: hsl(0, 0%, 90%); /* Light Gray */
+    --secondary-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --muted: hsl(0, 0%, 90%); /* Light Gray */
+    --muted-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --accent: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --accent-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --destructive: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+    --destructive-foreground: hsl(0, 0%, 0%); /* Pure Black */
+  
+    --border: hsl(0, 0%, 90%); /* Light Gray */
+    --input: hsl(0, 0%, 0%); /* Pure Black */
+    --ring: hsl(38, 96%, 53%); /* Vibrant Yellow-Orange */
+  }
+  
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
