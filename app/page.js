@@ -1,20 +1,23 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import NavBar from '@/components/ui/NavBar'
-import HeroGrid from '@/components/ui/HeroGrid'
+import Grid from '@/components/ui/Grid'
 import ListHandouts from '@/components/ui/HandoutList'
+import Hero from '@/components/ui/Hero'
 
 export default function Home() {
   return (
     <body className='mt-4'>
-      <header className='mb-16'>
+      <header>
         <NavBar />
       </header>
-      <main className="w-2/3 mt-24 mx-auto rounded-md">
-        <HeroGrid />
-        <div className='mt-12 mb-8 w-1/2'>
-          <h1 className='text-4xl text-gold'>Student Handouts</h1>
-          <ListHandouts />
+      <Hero />
+      <main className="w-2/3 mx-auto rounded-md">
+        <Grid />
+        <div className='mt-32 mb-8'>
+          <div>
+            <ListHandouts />
+          </div>
         </div>
       </main>
     </body>
