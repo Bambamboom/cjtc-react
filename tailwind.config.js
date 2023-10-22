@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
+    './components/ui/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
 	],
@@ -21,8 +22,8 @@ module.exports = {
         'train2': "url('app/img/training2.png')",
       },
       colors: {
-        'gold': '#fca311',
-        'drkblue': '#14213d',
+        'gold': '#ffea00',
+        'drkblue': '#003566',
         'lightgray': '#e5e5e5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

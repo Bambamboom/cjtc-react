@@ -9,7 +9,7 @@ export default function Grid() {
       backgroundImage:
       'url("https://i.imgur.com/fZWkMxW.png")',
    }}>
-          <div className='ml-4 mr-auto mt-4 p-2 bg-black/60 w-3/4 rounded-md'>
+          <div className='ml-4 mr-auto mt-4 p-2 transition bg-black/60 w-3/4 rounded-md'>
             <h1 className='h-192 text-gold text-2xl'>MASTER PPB DOWNLOAD</h1>
             <h2 className='text-white text-sm'>Includes all student handouts for PPB.</h2>
           </div>
